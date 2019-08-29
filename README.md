@@ -24,4 +24,5 @@ $ git branch -d dev 							#删除dev分支
 $ git switch -c dev							#创建并切换分支
 $ git switch master							#切到master分支
 $ git status								#查看当前分支状态以及文件冲突
+chongtuceshi
 ```
