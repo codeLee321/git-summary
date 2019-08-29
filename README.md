@@ -16,4 +16,11 @@ $ git push -u origin master 						#强推
 ```sh
 $ git checkout -b dev 							#-b参数表示创建并切换分支
 $ git branch								#查看当前分支
+$ git checkout master							#切到master分支
+$ git merge dev								#将dev分支合并到当前分支
+$ git branch -d dev 							#删除dev分支
+
+#高版本git提供switch
+$ git switch -c dev							#创建并切换分支
+$ git switch master							#切到master分支
 ```
