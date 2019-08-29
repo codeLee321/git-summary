@@ -16,4 +16,5 @@ $ git push -u origin master 						#强推
 ```sh
 $ git checkout -b dev 							#-b参数表示创建并切换分支
 $ git branch								#查看当前分支
+chongtuceshi
 ```
