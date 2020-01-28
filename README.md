@@ -5,7 +5,7 @@
 $ git config --list [--local|worktree|global|system]                    #查看git配置信息
 $ git config --show-origin user.name                                    #查看某条配置信息的源文件
 $ git config --global user.name glorylee                                #设置用户名
-$ git config --global user.email dennisglorylee@gmail.com                 #设置用户邮箱
+$ git config --global user.email dennisglorylee@gmail.com               #设置用户邮箱
 $ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' #像这种比较长的git命令，可以通过别名设置来简化：git hist
 
 ```
