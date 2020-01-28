@@ -5,16 +5,18 @@
 $ git config --list [--local|worktree|global|system]                    #查看git配置信息
 $ git config --show-origin user.name                                    #查看某条配置信息的源文件
 $ git config --global user.name glorylee                                #设置用户名
-git config --global user.email dennisglorylee@gmail.com                 #设置用户邮箱
-git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' #像这种比较长的git命令，可以通过别名设置来简化：git hist
+$ git config --global user.email dennisglorylee@gmail.com                 #设置用户邮箱
+$ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' #像这种比较长的git命令，可以通过别名设置来简化：git hist
 
 ```
-### 远程仓库创建
+### 远程仓库创建&变更提交
 ```sh
 $ git init  								#创建本地仓库
 $ echo "# git-summary" >> README.md  					#创建说明
 $ git add README.md 							#添加本地文件
 $ git commit -m "first commit"   					#添加提交说明
+$ git commit -am "add and commit"   					#添加变更并提交
+$ git commit --amend   					                #修正上次提交            
 $ git remote add origin https://github.com/codeLee321/git-summary.git 	#关联远程仓库
 $ git push --set-upstream origin master  				#将本地文件推向远程仓库
 $ git push -u origin master 						#效果同上
